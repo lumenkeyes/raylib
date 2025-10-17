@@ -1176,7 +1176,7 @@ static GamepadButton AndroidTranslateGamepadButton(int button)
 }
 
 // ANDROID: Get input events
-static int32_t AndroidInputCallback(struct android_app *app, AInputEvent *event)
+int32_t AndroidInputCallback(struct android_app *app, AInputEvent *event)
 {
     // If additional inputs are required check:
     // https://developer.android.com/ndk/reference/group/input
